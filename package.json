@@ -2,22 +2,18 @@
   "name": "voicechat-electron",
   "version": "1.0.0",
   "description": "Modern Voice Chat Application with Electron + React",
-  "main": "public/electron.js",
+  "main": "src/main.js",
   "homepage": "./",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
     "electron": "electron .",
-    "electron-dev": "concurrently \"npm start\" \"wait-on http://localhost:3000 && electron .\"",
-    "electron-build": "npm run build && electron .",
-    "dist": "npm run build && electron-builder",
-    "serve": "npx http-server src -p 3001 -c-1",
-    "dev": "concurrently \"npm run serve\" \"wait-on http://localhost:3001 && electron .\""
+    "electron-dev": "electron .",
+    "start": "electron .",
+    "dev": "electron .",
+    "dist": "electron-builder"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
     "socket.io-client": "^4.7.2",
     "styled-components": "^6.0.7",
     "@emotion/react": "^11.11.1",
@@ -38,8 +34,7 @@
       "output": "dist"
     },
     "files": [
-      "build/**/*",
-      "public/electron.js",
+      "src/**/*",
       "node_modules/**/*"
     ]
   }
