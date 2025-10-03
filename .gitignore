@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Server data
+server_data/
+*.db
+server.log
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Electron
+dist/
+dist-electron/
+out/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+build/
+*.egg-info/
